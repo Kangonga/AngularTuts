@@ -1,1 +1,20 @@
 <p>books works!</p>
+<h1>Book list</h1>
+<ul>
+    <li>{{ name }} by  {{ author }}
+    </li>
+</ul>
+<button 
+[disabled]="isDisabled"(click)="handleClick()">Click me</button>
+ <br> <br>
+<input type="text" [value]="propertyBound">
+<br><br><br>
+<!-- <button>Show books</button>
+<input type="text"
+(input)="handleInput($event)"
+>
+<p>{{eventValue}}</p> -->
+
+<button>Show Books</button>
+<input type="text" [(ngModel)]="eventValue">
+<p>{{eventValue}}</p>  
